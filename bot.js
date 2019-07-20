@@ -6,11 +6,11 @@ const bot = new Discord.Client();
 bot.on("ready", () => {
   let guild = bot.guilds.get('547843935964364849'); // ايدي ال سيرفر
   setInterval(function() {
-    guild.members.get('595653353783033857').setNickname('.').then(() => { // الايدي مالتك
+    guild.members.get('595653353783033857').setNickname('كل زق').then(() => { // الايدي مالتك
       setTimeout(() => {
-        guild.members.get('595653353783033857').setNickname('._').then(() => { // الايدي مالتك
+        guild.members.get('595653353783033857').setNickname('كل خرا').then(() => { // الايدي مالتك
           setTimeout(() => {
-            guild.members.get('595653353783033857').setNickname('._.') // الايدي مالتك
+            guild.members.get('595653353783033857').setNickname('كل تبن') // الايدي مالتك
           }, 3000); // هذا الوقت الي يتغير فيه لاول مره
         });
       }, 6000); // هذا الوقت الي يتغير فيه لثاني مره
