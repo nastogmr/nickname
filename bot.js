@@ -23,11 +23,11 @@ bot.on("ready", () => {
 bot.on("ready", () => {
   let guild = bot.guilds.get('599551730388041743'); // ايدي ال سيرفر
   setInterval(function() {
-    guild.members.get('595653353783033857').setNickname('.').then(() => { // الايدي مالتك
+    guild.members.get('595653353783033857').setNickname('._.').then(() => { // الايدي مالتك
       setTimeout(() => {
         guild.members.get('595653353783033857').setNickname('._').then(() => { // الايدي مالتك
           setTimeout(() => {
-            guild.members.get('595653353783033857').setNickname('._.') // الايدي مالتك
+            guild.members.get('595653353783033857').setNickname('.') // الايدي مالتك
           }, 2000); // هذا الوقت الي يتغير فيه لاول مره
         });
       }, 4000); // هذا الوقت الي يتغير فيه لثاني مره
