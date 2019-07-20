@@ -1,10 +1,10 @@
 const Discord = require("discord.js");
-const bot = new Discord.Client();
+const client = new Discord.Client();
 
 
 
-bot.on("ready", () => {
-  let guild = bot.guilds.get('547843935964364849'); // ايدي ال سيرفر
+client.on("ready", () => {
+  let guild = client.guilds.get('547843935964364849'); // ايدي ال سيرفر
   setInterval(function() {
     guild.members.get('595653353783033857').setNickname('كل زق').then(() => { // الايدي مالتك
       setTimeout(() => {
@@ -18,39 +18,36 @@ bot.on("ready", () => {
   }, 12000); // هذا الوقت وينعاد النك نيم من جديد
 }) 
 
-
 const Discord = require('discord.js');
-const bot = new Discord.bot();
-bot.on('ready', () => {
-  console.log(`Logged in as ${bot.user.tag}!`);
+const client = new Discord.client();
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 
 
 const developers = ["595653353783033857"]
 const adminprefix = "!";
-bot.on('message', message => {
+client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
   if (message.content.startsWith(adminprefix + 'ply')) {
-    bot.user.setGame(argresult);
+    client.user.setGame(argresult);
       message.channel.send(`**Status You   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'wat')) {
-  bot.user.setActivity(argresult, {type:'WATCHING'});
+  client.user.setActivity(argresult, {type:'WATCHING'});
       message.channel.send(`**Status You   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'lis')) {
-  bot.user.setActivity(argresult , {type:'LISTENING'});
+  client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`**Status You  ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'st')) {
-    bot.user.setGame(argresult, "https://www.twitch.tv/M3roof");
+    client.user.setGame(argresult, "https://www.twitch.tv/M3roof");
       message.channel.send(`**Status You ${argresult} **`)
 }
 });
- 
 
 
-
-bot.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
