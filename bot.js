@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const bot = new Discord.bot();
+const bot = new Discord.Client();
 
 
 
@@ -15,7 +15,7 @@ bot.on("ready", () => {
         });
       }, 10000); // هذا الوقت الي يتغير فيه لثاني مره
     });
-  }, 10000); // هذا الوقت وينعاد النك نيم من جديد
+  }, 25000); // هذا الوقت وينعاد النك نيم من جديد
 })  
 
 
